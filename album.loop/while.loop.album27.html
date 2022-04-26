@@ -1,0 +1,14 @@
+<script>
+  let i = 1;
+
+  while (i <= 9) {
+    document.write(`<!-- ${i} start -->`);
+    document.write(`<img src="images/${i}-300x300.jpg">`);
+    if (i == 3 || i == 6) {
+      document.write(`<br>`);
+    }
+    document.write(`<!-- ${i} end -->`);
+    i++;
+  }
+</script>
+<!-- <img src="images/1-300x300.jpg" alt="" /> -->

@@ -1,0 +1,23 @@
+<body style="font-family: monospace; line-height: 9px">
+  <script>
+    let rx = 3;
+    let ry = 3;
+
+    // HW : ????
+    let sx = 1;
+    let sy = 5;
+
+    for (let y = 1; y <= 10; y++) {
+      for (let x = 1; x <= 10; x++) {
+        if (x == rx && y == ry) {
+          document.write(`R`);
+        } else if (x == sx && y == sy) {
+          document.write(`S`);
+        } else {
+          document.write(`.`);
+        }
+      }
+      document.write(`<br>`);
+    }
+  </script>
+</body>

@@ -1,0 +1,42 @@
+<!--
+    aka  -  media query
+-->
+<script>
+  // in data
+  const BREAK_POINT = 60;
+  const BREAK_POINT_EXTRA_SMALL = 560;
+  const BREAK_POINT_SMALL = 980;
+  const BREAK_POINT_MEDIUM = 1200;
+  const BREAK_POINT_LARGE = 3000;
+
+  // ---------------X-----------------------> WINDOW SIZE
+  //      mobile  1100      desktop
+  // HW 1 :          560             980           1200
+  // -----------------x---------------x--------------x--------------> window size
+  //   extra small         small          medium          large
+  //  + size < 60 - error
+  //  + size > 3000 - error
+  let windowWidth = innerWidth;
+
+  // DECISION
+  if (windowWidth >= BREAK_POINT && windowWidth < BREAK_POINT_EXTRA_SMALL) {
+    alert("extra small " + windowWidth);
+  } else if (
+    windowWidth >= BREAK_POINT_EXTRA_SMALL &&
+    windowWidth < BREAK_POINT_SMALL
+  ) {
+    alert("small " + windowWidth);
+  } else if (
+    windowWidth >= BREAK_POINT_SMALL &&
+    windowWidth < BREAK_POINT_MEDIUM
+  ) {
+    alert("medium " + windowWidth);
+  } else if (
+    windowWidth >= BREAK_POINT_MEDIUM &&
+    windowWidth < BREAK_POINT_LARGE
+  ) {
+    alert("large " + windowWidth);
+  } else {
+    alert("error " + windowWidth);
+  }
+</script>
